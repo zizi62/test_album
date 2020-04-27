@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { NavLink,Redirect } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import Photo from './Photo/Photo';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
@@ -34,11 +34,6 @@ const Photos = (props) => {
   const { photos, getSelectedPhoto, albumTitle, isPhotosLoading, isError, userId } = props
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-
-//   if(!albumId) {
-//     return <Redirect to ='/' />
-// }
-
 
   const handleOpen = (index) => {
     getSelectedPhoto(index)

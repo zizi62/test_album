@@ -10,7 +10,6 @@ import { getAlbum } from '../../Redux/reducers/albumsReducer';
 const PhotosContainer = (props) => {
 
     useEffect(() => {
-        debugger
         if (!props.match.params.albumId) {
             props.history.push('/')
         }
